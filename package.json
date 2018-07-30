@@ -20,6 +20,7 @@
     "dependencies": {
         "lodash": "^4.17.10",
         "ncp": "^2.0.0",
+        "prompt": "^1.0.0",
         "shelljs": "^0.8.2"
     },
     "devDependencies": {

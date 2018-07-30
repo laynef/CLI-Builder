@@ -1,22 +1,14 @@
 {
     "name": "@lfaler/cli-builder",
     "title": "CLI Builder",
-    "version": "1.0.7",
+    "version": "1.0.0",
     "description": "",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ManOfTech/Metallics-JS-CLI.git"
-    },
     "scripts": {
         "new-command": "bash ./new-command.sh"
     },
     "keywords": [],
-    "author": "Layne Faler <lfaler>",
+    "author": "You",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ManOfTech/Metallics-JS-CLI/issues"
-    },
-    "homepage": "https://github.com/ManOfTech/Metallics-JS-CLI#readme",
     "dependencies": {
         "lodash": "^4.17.10",
         "ncp": "^2.0.0",
