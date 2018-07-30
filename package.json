@@ -5,7 +5,7 @@
     "description": "",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ManOfTech/Metallics-JS-CLI.git"
+        "url": "git+https://github.com/laynef/CLI-Builder.git.git"
     },
     "scripts": {
         "new-command": "bash ./new-command.sh"
@@ -14,9 +14,9 @@
     "author": "Layne Faler <lfaler>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/ManOfTech/Metallics-JS-CLI/issues"
+        "url": "https://github.com/laynef/CLI-Builder.git/issues"
     },
-    "homepage": "https://github.com/ManOfTech/Metallics-JS-CLI#readme",
+    "homepage": "https://github.com/laynef/CLI-Builder.git#readme",
     "dependencies": {
         "lodash": "^4.17.10",
         "ncp": "^2.0.0",
