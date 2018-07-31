@@ -15,7 +15,16 @@ const description = 'Display this documentation';
 const command = () => {
     const commandName = Object.keys(packager.bin).pop();
 
-    console.info(`\n${packager.title}`);
+    console.info(`
+    ________  ___  ___  ___       ________  _______   ________
+    |\\   __  \\|\\  \\|\\  \\|\\  \\     |\\   ___ \\|\\  ___ \\ |\\   __  \\
+    \\ \\  \\|\\ /\\ \\  \\\\\\  \\ \\  \\    \\ \\  \\_|\\ \\ \\   __/|\\ \\  \\|\\  \\
+     \\ \\   __  \\ \\  \\\\\\  \\ \\  \\    \\ \\  \\ \\\\ \\ \\  \\_|/_\\ \\   _  _\\
+      \\ \\  \\|\\  \\ \\  \\\\\\  \\ \\  \\____\\ \\  \\_\\\\ \\ \\  \\_|\\ \\ \\  \\\\  \\|
+       \\ \\_______\\ \\_______\\ \\_______\\ \\_______\\ \\_______\\ \\__\\\\ _\\
+        \\|_______|\\|_______|\\|_______|\\|_______|\\|_______|\\|__|\\|__|
+
+    `);
 
     console.info(`\n${packager.title}: Command Line Interface to make your life easier.`);
     console.info(`=> The ${packager.title} command is '${kebabCase(commandName)}'. To blast this project into the fifth dimension.`);
