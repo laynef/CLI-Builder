@@ -17,6 +17,7 @@ const command = (directoryName) => {
                 'commandName': { required: true },
             },
         }, function (err, result) {
+            console.log(result);
             if (err) {
                 console.error(`Error with your CLI creation.`);
             } else {
