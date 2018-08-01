@@ -26,7 +26,7 @@ const command = (directoryName) => {
                 pack.title = result.title;
                 object[result.commandName] = './actions/index.js';
                 pack.bin = object;
-                fs.writeFileSync(path.join(root, 'package.json'), JSON.stringify(pack));
+                fs.writeFileSync(path.join(root, 'package.json'), JSON.stringify(pack, null, 4));
                 console.log(`Your CLI directory has been built in "${root}/${directoryName}"`);
             }
         });
