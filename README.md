@@ -2,6 +2,8 @@
 
 Build your own cli with automatic unit tests for each command you create
 
+For more details check out: [More Details](/MORE_DETAILS.md)
+
 ## Installation
 ```
 npm i -g @lfaler/cli-builder
