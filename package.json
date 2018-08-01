@@ -1,6 +1,6 @@
 {
-    "name": "@lfaler/cli-builder",
-    "title": "CLI Builder",
+    "name": "astroids",
+    "title": "Astroids",
     "version": "1.0.6",
     "description": "",
     "repository": {
@@ -32,6 +32,6 @@
         "eslint-plugin-standard": "^3.1.0"
     },
     "bin": {
-        "cli-builder": "./actions/index.js"
+        "astroids": "./actions/index.js"
     }
 }

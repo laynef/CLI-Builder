@@ -24,10 +24,12 @@ const command = (directoryName) => {
             let pack = require('../../../package.json');
             pack.name = result.name;
             pack.title = result.title;
+            delete pack.repository;
+            delete pack.bugs;
+            delete pack.homepage;
             object[result.commandName] = './actions/index.js';
             pack.bin = object;
-            console.log(pack);
-            fs.writeFileSync(path.join(root, 'package.json'), JSON.stringify(pack, null, 4));
+            fs.writeFileSync(path.join(root, directoryName, 'package.json'), JSON.stringify(pack, null, 4));
             console.log(`Your CLI directory has been built in "${root}/${directoryName}"`);
         }
     });
