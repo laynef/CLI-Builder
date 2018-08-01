@@ -1,6 +1,6 @@
 const description = '<ENTER YOUR DESCRIPTION>';
 
-const command = () => {
+const command = (argument1, argumentN, options) => {
     console.log('ENTER YOUR INSTALLATION');
 };
 

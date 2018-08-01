@@ -24,6 +24,8 @@ const command = () => {
        \\ \\_______\\ \\_______\\ \\_______\\ \\_______\\ \\_______\\ \\__\\\\ _\\
         \\|_______|\\|_______|\\|_______|\\|_______|\\|_______|\\|__|\\|__|
 
+    ${packager.title} Version: ${packager.version}
+
     `);
 
     console.info(`\n${packager.title}: Command Line Interface to make your life easier.`);

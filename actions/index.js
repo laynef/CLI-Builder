@@ -9,7 +9,16 @@ const flags = [];
 
 for (var i = 1; i < user.length; i++) {
     if (user[i].indexOf('--') === 0) {
-        flags.push(user[i]);
+        const array = user[i].slice(2).split('=');
+        if (array.length === 1) {
+            const object = {};
+            object[array[0]] = true;
+            flags.push(object);
+        } else {
+            const object = {};
+            object[array[0]] = array[1];
+            flags.push(object);
+        }
     } else {
         args.push(user[i]);
     }
