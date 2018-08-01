@@ -24,6 +24,21 @@ npm run new-command <command-name>
 // File generated in ./actions/sources/commands/<command-name>.js
 ```
 
+The things to keep in mind is it auto generates shorthand aliases for your command names. Your command names must be in camelCase and the start letter and the capital letters for your commands must all be unique for the aliases to work.
+
+This means:
+No:
+```
+npm run new-command newWebRedux // nwr
+npm run new-command newWebReducer // nwr
+```
+
+Yes:
+```
+npm run new-command newWebRedux // nwr
+npm run new-command newWebReduxReducer // nwrr
+```
+
 ## Command with Options in CLI
 ```
 // Options look like '--startLine=0'
