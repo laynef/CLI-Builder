@@ -26,3 +26,13 @@ npm run new-command <command-name>
 // Option Flag: --<YOUR-OPTION-NAME>=<YOUR-OPTION-VALUE>
 <YOUR-CLI-COMMAND-NAME> <YOUR-COMMAND> <arguments-you-created> --<YOUR-OPTION-NAME>=<YOUR-OPTION-VALUE>
 ```
+
+## Example CLI
+```
+cd example
+npm i -g
+astroids
+
+// To Un-Install
+npm uninstall -g
+```
