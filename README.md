@@ -1,5 +1,7 @@
 # CLI Builder
 
+Build your own cli with automatic unit tests for each command you create
+
 ## Installation
 ```
 npm i -g @lfaler/cli-builder
@@ -30,8 +32,12 @@ npm run new-command <command-name>
 ## Example CLI
 ```
 cd example
+npm i
 npm i -g
 astroids
+
+// To run tests
+npm run test
 
 // To Un-Install
 npm uninstall -g
