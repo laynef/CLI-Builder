@@ -14,6 +14,8 @@ cli-builder create <project-name>
 // Name => The name of your package json
 // Title => The name of your project
 // commndName => The command to run your cli
+
+npm install
 ```
 
 ## Generate new command file
@@ -29,11 +31,17 @@ npm run new-command <command-name>
 <YOUR-CLI-COMMAND-NAME> <YOUR-COMMAND> <arguments-you-created> --<YOUR-OPTION-NAME>=<YOUR-OPTION-VALUE>
 ```
 
+## Run Tests
+```
+npm install
+npm run test
+```
+
 ## Example CLI
 ```
 cd example
-npm i
-npm i -g
+npm install
+npm install -g
 astroids
 
 // To run tests
