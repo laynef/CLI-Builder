@@ -24,6 +24,7 @@ const command = (directoryName) => {
                 let pack = require(path.join(root, directoryName, 'package.json'));
                 pack.name = result.name;
                 pack.title = result.title;
+                pack.version = '1.0.0';
                 delete pack.repository;
                 delete pack.bugs;
                 delete pack.homepage;
