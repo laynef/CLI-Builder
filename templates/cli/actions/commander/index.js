@@ -6,7 +6,7 @@ const Commander = function (commandName, args, flags) {
             acculum = { ...acculum, ...item };
             return acculum;
         }, {});
-        if (sources[commandName] && flags.help) {
+        if (sources[commandName] && options.help) {
             return sources[commandName].documentation();
         } else if (sources[commandName]) {
             return sources[commandName].command(...args, options);
