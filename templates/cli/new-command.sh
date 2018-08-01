@@ -1,2 +1,2 @@
 NAME=$1
-cp ./actions/sources/commands/installation.js ./actions/sources/commands/$NAME.js
+cp ./templates/command.js ./actions/sources/commands/$NAME.js
