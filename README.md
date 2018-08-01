@@ -20,4 +20,9 @@ npm run new-command <command-name>
 // File generated in ./actions/sources/commands/<command-name>.js
 ```
 
-## 
+## Command with Options in CLI
+```
+// Options look like '--startLine=0'
+// Option Flag: --<YOUR-OPTION-NAME>=<YOUR-OPTION-VALUE>
+<YOUR-CLI-COMMAND-NAME> <YOUR-COMMAND> <arguments-you-created> --<YOUR-OPTION-NAME>=<YOUR-OPTION-VALUE>
+```
