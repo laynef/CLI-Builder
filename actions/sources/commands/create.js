@@ -21,7 +21,7 @@ const command = (directoryName) => {
                 console.error(`Error with your CLI creation.`);
             } else {
                 const object = {};
-                let pack = require('../../../package.json');
+                let pack = require(path.join(root, directoryName, 'package.json'));
                 pack.name = result.name;
                 pack.title = result.title;
                 delete pack.repository;
