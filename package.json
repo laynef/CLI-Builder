@@ -1,7 +1,7 @@
 {
     "name": "@lfaler/cli-builder",
     "title": "CLI Builder",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "",
     "repository": {
         "type": "git",
