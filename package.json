@@ -1,6 +1,6 @@
 {
-    "name": "astroids",
-    "title": "Astroids",
+    "name": "@lfaler/cli-builder",
+    "title": "CLI Builder",
     "version": "1.0.7",
     "description": "",
     "repository": {
