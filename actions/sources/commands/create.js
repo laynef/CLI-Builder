@@ -9,7 +9,7 @@ const description = 'Generate a CLI Build folder into your current directory';
 const command = (directoryName, options) => {
     const root = process.cwd();
 
-    if (!directoryName) {
+    if (!directoryName || !options) {
         console.error(`Please enter a directory name for your CLIs`);
         return;
     }
