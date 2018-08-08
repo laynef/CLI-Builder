@@ -1,0 +1,40 @@
+{
+    "name": "@lfaler/cli-builder",
+    "title": "CLI Builder",
+    "version": "1.0.9",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/laynef/CLI-Builder.git.git"
+    },
+    "scripts": {
+        "new-command": "bash ./new-command.sh",
+        "test": "mocha ./tests/index.js"
+    },
+    "keywords": [],
+    "author": "Layne Faler <lfaler>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/laynef/CLI-Builder.git/issues"
+    },
+    "homepage": "https://github.com/laynef/CLI-Builder.git#readme",
+    "dependencies": {
+        "lodash": "^4.17.10",
+        "ncp": "^2.0.0",
+        "prompt": "^1.0.0",
+        "shelljs": "^0.8.2"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "eslint": "^4.19.1",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.12.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.7.0",
+        "eslint-plugin-standard": "^3.1.0",
+        "mocha": "^5.2.0"
+    },
+    "bin": {
+        "cli-builder": "./actions/index.js"
+    }
+}

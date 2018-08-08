@@ -6,9 +6,10 @@ const packager = require('../../../package.json');
 
 const description = 'Generate a CLI Build folder into your current directory';
 
-const command = (directoryName) => {
+const command = (directoryName, options) => {
     const root = process.cwd();
-    ncp(path.join(__dirname, '..', '..', '..', 'templates', 'cli'), path.join(root, directoryName), () => {
+    const project = options.type || 'camelCase'
+    ncp(path.join(__dirname, '..', '..', '..', 'templates', project), path.join(root, directoryName), () => {
         prompt.start();
         prompt.get({
             properties: {
@@ -41,8 +42,13 @@ const documentation = () => {
     console.info(`
 Generate a CLI Build folder into your current directory
 
+Options:
+Types for command naming conventions (default: camelCase)
+=> camelCase
+=> kebabCase
+
 Command:
-${Object.keys(packager.bin).pop()} create <YOUR-DIRECTORY-NAME>
+${Object.keys(packager.bin).pop()} create <YOUR-DIRECTORY-NAME> [Options]
     `);
 };
 
