@@ -8,7 +8,13 @@ const description = 'Generate a CLI Build folder into your current directory';
 
 const command = (directoryName, options) => {
     const root = process.cwd();
-    const project = options.type || 'camelCase'
+
+    const types = {
+        'camelCase': 'camelCase',
+        'kebabCase': 'kebabCase',
+    };
+
+    const project = options && options.casing && types[options.type] ? types[options.casing] : 'camelCase'
     ncp(path.join(__dirname, '..', '..', '..', 'templates', project), path.join(root, directoryName), () => {
         prompt.start();
         prompt.get({
