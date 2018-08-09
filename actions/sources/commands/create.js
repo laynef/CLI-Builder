@@ -19,7 +19,7 @@ const command = (directoryName, options) => {
         'kebabCase': 'kebabCase',
     };
 
-    const project = options && options.casing && types[options.type] ? types[options.casing] : 'camelCase'
+    const project = options && options.casing && types[options.casing] ? types[options.casing] : 'camelCase'
     ncp(path.join(__dirname, '..', '..', '..', 'templates', project), path.join(root, directoryName), () => {
         prompt.start();
         prompt.get({
