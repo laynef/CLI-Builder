@@ -3,13 +3,13 @@ const path = require('path');
 const { expect } = require('chai');
 const { size } = require('lodash');
 
-const custom = fs.readdirSync(path.join(__dirname, 'custom')).reduce((acc, item) => {
+const customCircle = fs.readdirSync(path.join(__dirname, 'custom')).reduce((acc, item) => {
     acc[item] = require(`./${item}`);
     return acc;
 }, {});
 
 // mocha should catch on and can be different
-for (let customTests in circle) {
+for (let customTests in customCircle) {
     circle[customTests];
 }
 
