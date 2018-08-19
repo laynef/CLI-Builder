@@ -3,6 +3,16 @@ const path = require('path');
 const { expect } = require('chai');
 const { size } = require('lodash');
 
+const custom = fs.readdirSync(path.join(__dirname, 'custom')).reduce((acc, item) => {
+    acc[item] = require(`./${item}`);
+    return acc;
+}, {});
+
+// mocha should catch on and can be different
+for (let customTests in circle) {
+    circle[customTests];
+}
+
 // { commandName: { documentation, command, description } }
 const allCommands = require(path.join(__dirname, '..', 'actions', 'sources', 'index.js'));
 const allFilesLength = fs.readdirSync(path.join(__dirname, '..', 'actions', 'sources', 'commands')).length;
