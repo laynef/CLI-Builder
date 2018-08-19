@@ -10,7 +10,7 @@ const customCircle = fs.readdirSync(path.join(__dirname, 'custom')).reduce((acc,
 
 // mocha should catch on and can be different
 for (let customTests in customCircle) {
-    circle[customTests];
+    customCircle[customTests];
 }
 
 // { commandName: { documentation, command, description } }
